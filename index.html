@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel/Slideshow task</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <div class="container">
+
+<!-- Slider main container -->
+<div class="swiper">
+
+    <!-- sub container/ swiper wrapper -->
+    <div class="swiper-wrapper">
+
+      <!-- Slides -->
+      <div class="swiper-slide"> <img src="imagea.jpg" alt="img-a"></div>
+      <div class="swiper-slide"> <img src="imageb.jpg" alt="img-b"></div>
+      <div class="swiper-slide"> <img src="imagec.jpg" alt="img-c"></div>
+      <div class="swiper-slide"> <img src="imaged.jpg" alt="img-d"></div>
+      <div class="swiper-slide"> <img src="imagee.jpg" alt="img-e"></div>
+      <div class="swiper-slide"> <img src="imagef.jpg" alt="img-f"></div>
+      
+
+    </div>
+    <!-- pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- Navigation arrors -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    
+  </div>
+
+
+        
+    </div> 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+  
+  loop: true,
+
+  // for the pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+    </script>
+</body>
+</html>

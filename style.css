@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+   
+    
+}
+
+.swiper{
+    width: 100%;
+    height: fit-content;
+}
+.swiper-slide img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+/* styling prev and next icon */
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.swiper .swiper-button-prev:hover {
+    opacity: 1;
+    color: white;
+}
+
+.swiper .swiper-button-next:hover {
+    opacity: 1;
+    color: white;
+}
+
+/* Syling the pagination */
+.swiper .swiper-pagination-bullet-active{
+background-color:white;
+
+}
+
+@media screen and (max-width: 600px) {
+    .swiper-slide img{
+        width: 100%;
+        height: 50vh;
+    }
+    
+     .swiper .swiper-button-next{
+        opacity: 1;
+color: white;
+
+    }
+
+    .swiper .swiper-button-prev{
+        opacity: 1;
+color: white;
+
+    }
+
+    .swiper .swiper-pagination{
+        display: none;
+    }
+
+    
+}
+    
+    
+    
+    
+    
